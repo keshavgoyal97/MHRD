@@ -1,0 +1,22 @@
+
+step 1: copy project_1 folder
+step 2: paste in xampp/htdocs
+step 3: open browser  and tye "http://localhost/Pproject_1/“
+
+now connect Database
+
+step 4: open browser and tye "http://localhost/phpmyadmin/"
+step 5: click on import tab
+step 6: click on browse file and select “project.sql" file this file is on "Database" folder
+step 7: set your phpmyadmin username=“root” and password=“30121014”
+step 8: now open “localhost/project_1/home.html” in your browser
+
+now your project ready:
+
+To completely run the project the project.Please insert the following values in ministers attribute.
+(“prakash”,your choice,your choice,your choice,your choice,your choice)
+(“kushwaha”,your choice,your choice,your choice,your choice,your choice)
+(“mahendra”,your choice,your choice,your choice,your choice,your choice)
+In order to change the Image of a minister u have to keep name of image as the name of minster in database.
+
+!!ENJOY
