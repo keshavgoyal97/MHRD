@@ -1,0 +1,203 @@
+<!doctype html>
+<head>
+<title>Project_Home</title>
+<meta charset = "UTF-8">
+<style>
+h1.heading{color:white;background-color:green;font-size:42px;padding-top:6px;padding-bottom:6px;font-family: "Times New Roman", Times, serif;}
+button.buttons{color:white;height:40px;font-size:20px;padding-left:10px;width:1350px;text-align:left;padding-bottom:3px;padding-top:3px;background-color:#008CBA;}
+
+.dropbtn {
+    background-color:white;
+    color: red;
+    padding: 16px;
+    font-size: 20px;
+    border-color: blue;
+    cursor: pointer;
+    margin-left:620px;
+	margin-top:40px;
+	} 
+
+.dropdown {
+    
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	margin-left:620px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color:#ff6666;color:white;}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+<!-- background of the log in button after hover-->
+.dropdown:hover .dropbtn {
+    background-color: #3399ff;
+}
+* {box-sizing:border-box}
+body {font-family: Verdana,sans-serif;}
+.mySlides {display:none}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+</style>
+</head>
+</body>
+<img src="emblem.png" alt="MHRD" style="float:left;width:200px;height:210px;padding-top:12px">
+<br/>
+
+<h1 class="heading"><pre>   Ministry Of Human Resource Development,
+    INDIA  </pre></h1>
+<!--SLideshow  -->
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="slideshow_1.jpg" style="width:1000px;height:400px">
+  <div class="text">MHRD India</div>s
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="slideshow_2.jpg" style="width:1000px;height:400px">
+  <div class="text">MHRD India</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="slideshow_3.jpg" style="width:1000px;height:400px">
+  <div class="text">MHRD India</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 4000); // Change image every 4 seconds
+}
+</script>
+
+<a href="ministers.php"><button class="buttons" type="button" href="">Who's who? - List of Ministers in the MHRD Department.</button></a>
+<a href="edu.html"><button class="buttons" type="button" href="">Educational Institutions .</button></a>
+<a href="grivances.php"><button class="buttons" type="button" href="">Grievances</button></a>
+<a href="https://www.youtube.com/watch?v=5LdWOe4LKVk"><button class="buttons" type="buttons" href="">Multimedia</button></a>
+<a href="scholarahipndscheme.php"><button class="buttons" type="buttons" href="">Schemes and Scholarships</button></a>
+<br>
+<br>
+<a href="newschool.html"><button type="button" style="background-color:#f4511e;color:white;width:1350px;text-align:left;font-size:20px;paddin-top:3px;padding-bottom:3px">Setup a school</button></a>
+
+<div class="dropdown">
+  <button class="dropbtn">Log in</button>
+  <div class="dropdown-content">
+    <a href="loginM.php">Login as a MHRD Minister</a>
+    <a href="loginD.php">Login as a Dean/Principal</a>
+    <a href="http://127.0.0.1/phpmyadmin/index.php">Login as an Administrator </a>
+  </div>
+</div>
+
+<pre>            
+ <br>
+ <br>
+ <br>
+
+</body>
+</html>

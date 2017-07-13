@@ -1,0 +1,30 @@
+<?php
+    session_start();
+    if(!empty($_SESSION['usernameD']))
+    {}
+    else
+    die("PLAESE LOGIN");
+    ?>
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>apply funds</title>
+</head>
+<body>
+
+<form action="applyfund.php" method="post">
+<h1>FILL THE FORM TO APPLY FOR FUNDS</h1>
+Name of Institution<br>
+<input type="text" name="instiName"><br>
+Purpose of fund<br>
+<input type = "text" name = "purpose"><br>
+Amount<br>
+<input type="number" name = "amount"><br>
+Details/Suggestions <br>
+<textarea name = "comment" rows='5' cols='40'></textarea><br>
+<input type = "submit" value="submit">
+ 
+</form>
+</body>
+</html>
